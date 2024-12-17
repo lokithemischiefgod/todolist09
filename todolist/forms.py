@@ -10,11 +10,11 @@ class TodoForm(ModelForm):
 
         labels = {
 
-            'content': 'Nice Content',
-            'title': 'This is nice Title'
+            'title': 'Judul',
+            'content': 'Deskripsi'
         }
         widgets = {
-            'content': TextInput(attrs={'class': 'form-control', 'id': 'exampleInputEmail1', 'aria-describedby': 'emailHelp', 'placeholder': 'Enter Content'}),
-            'title': TextInput(attrs={'class': 'form-control', 'id': 'titleHere', 'aria-describedby': 'titleHelp', 'placeholder': 'Enter Title Here...'})
+            'title': TextInput(attrs={'class': 'form-control', 'id': 'titleHere', 'aria-describedby': 'titleHelp', 'placeholder': 'Masukkan Judul'}),
+            'content': TextInput(attrs={'class': 'form-control', 'id': 'exampleInputEmail1', 'aria-describedby': 'emailHelp', 'placeholder': 'Masukkan Deskripsi'})
         }
         
