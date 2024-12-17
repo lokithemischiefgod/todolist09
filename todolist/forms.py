@@ -5,7 +5,6 @@ from django.forms import ModelForm, TextInput
 class TodoForm(ModelForm):
     class Meta:
         model = Todo
-        #fields = ['content', 'added_time']
         fields = '__all__'
 
         labels = {
