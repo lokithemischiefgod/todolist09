@@ -12,7 +12,7 @@ def index(request):
 
     todoList = Todo.objects.all().order_by('-date')
 
-    return render(request, 'todolist/list.html', {'list': todoList})
+    return render(request, 'todo/list.html', {'list': todoList})
 
 
 def saveAction(request):
@@ -23,7 +23,7 @@ def saveAction(request):
         todoform.save()
 
         return redirect('/')
-    return render(request, 'todolist/index.html', {'form': todoform})
+    return render(request, 'todo/index.html', {'form': todoform})
 
 
 def editTodo(request, pk):
@@ -36,7 +36,7 @@ def editTodo(request, pk):
         editForm.save()
         return redirect('/')
 
-    return render(request, 'todolist/index.html', {'form': editForm})
+    return render(request, 'todo/index.html', {'form': editForm})
 
 
 def deleteAction(request, pk):

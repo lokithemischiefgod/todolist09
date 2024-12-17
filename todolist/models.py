@@ -10,5 +10,5 @@ class Todo(models.Model):
     title = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.content

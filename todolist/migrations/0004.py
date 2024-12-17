@@ -5,7 +5,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('todoliat', '0003'),
+        ('todolist', '0003'),
     ]
 
     operations = [

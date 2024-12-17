@@ -6,7 +6,7 @@ class TodoForm(ModelForm):
     class Meta:
         model = Todo
         #fields = ['content', 'added_time']
-        fields = '_all_'
+        fields = '__all__'
 
         labels = {
 
