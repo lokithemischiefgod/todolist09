@@ -10,7 +10,7 @@ from django.utils import timezone
 
 def index(request):
 
-    todoList = Todo.objects.all().order_by('-date')
+    todoList = Todo.objects.all().order_by('-id')
 
     return render(request, 'todo/list.html', {'list': todoList})
 

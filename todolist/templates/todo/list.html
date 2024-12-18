@@ -23,6 +23,7 @@
             <th scope="col">Deskripsi</th>
             <th scope="col">Judul</th>
             <th scope="col">Ditambahkan pada</th>
+            <th scope="col">Diedit pada</th>
             <th scope="col">Opsi</th>
           </tr>
         </thead>
@@ -32,7 +33,8 @@
             <th scope="row" style="color: #fff;">{{ list.id }}</th>
             <td style="color: #ccc;">{{ list.content }}</td>
             <td style="color: #ccc;">{{ list.title }}</td>
-            <td style="color: #ccc;">{{list.date}}</td>
+            <td style="color: #ccc;">{{list.created_at}}</td>
+            <td style="color: #ccc;">{{list.updated_at}}</td>
 
             <td>
               <a class="btn btn-success" href="{% url 'edittodo' list.id %}" style="margin-right: 5px; padding: 5px 10px; border-radius: 5px;">Edit</a>
